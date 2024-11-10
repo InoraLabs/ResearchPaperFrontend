@@ -11,7 +11,7 @@ export default function ResponsesPage() {
   useEffect(() => {
     const fetchResponses = async () => {
       try {
-        const { data } = await axios.get('http://localhost:5000/api/questions');
+        const { data } = await axios.get('https://researchpaperbackend.onrender.com/api/questions');
         setResponses(data);
       } catch (error) {
         setError('Error fetching responses');

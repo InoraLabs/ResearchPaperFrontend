@@ -12,7 +12,7 @@ export default function ResponseDetailPage() {
     if (id) {
       const fetchResponse = async () => {
         try {
-          const { data } = await axios.get(`http://localhost:5000/api/questions/${id}`);
+          const { data } = await axios.get(`https://researchpaperbackend.onrender.com/api/questions/${id}`);
           setResponse(data);
         } catch (error) {
           setError('Error fetching response');

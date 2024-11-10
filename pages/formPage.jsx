@@ -44,7 +44,7 @@ export default function FormPage() {
   
     try {
       const questionsData = { name, questions: answers.map((answer, i) => ({ question: questions[i], answer })) };
-      await axios.post('http://localhost:5000/api/questions', questionsData);
+      await axios.post('https://researchpaperbackend.onrender.com/api/questions', questionsData);
       setError('');
       alert('Form submitted successfully');
   
